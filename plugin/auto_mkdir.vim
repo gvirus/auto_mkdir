@@ -38,6 +38,7 @@ endif
 augroup auto_mkdir
 	au!
 	au BufWritePre,FileWritePre * call <SID>auto_mkdir()
+	au BufNewFile               * call <SID>auto_mkdir()
 augroup END
 
 function <SID>auto_mkdir()
